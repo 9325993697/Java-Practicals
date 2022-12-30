@@ -1,0 +1,39 @@
+class Slip20
+{
+ public static void main(String[] arg)
+{
+  int a,b,c;
+  System.out.println("Enter the First Number");
+  a=Integer.praseInt(args[0]);
+  System.out.println("Enter the Second Number");
+  b=Integer.praseInt(args[1]);
+  System.out.println("Enter the Third Number");
+  c=Integer.praseInt(args[2]);
+  int temp;
+
+        if (b < a) 
+        {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
+        if (c < b) 
+        {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+
+        if (b < a) 
+        {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+ }
+}

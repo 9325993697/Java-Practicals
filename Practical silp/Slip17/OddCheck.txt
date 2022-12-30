@@ -1,0 +1,40 @@
+class OddNum {
+     
+    private static int num;
+
+    public OddNum()
+    {
+        num=0;
+    }
+
+    public OddNum(int n)
+    {
+        this.num=n;
+
+    }
+
+    public boolean isOld()
+    {
+        if (num % 2 != 0)
+        return true ;
+        else
+        return false;
+
+    }
+
+    public static void main(String arg[])
+    {
+      int  num= Integer.parseInt(arg[0]);
+      OddNum s2= new OddNum(num);
+        
+        if (s2.isOld())
+        {
+            System.out.println("Number Is Old");
+        }
+        else
+        {
+            System.out.println("Number Is Not Odd");
+        }
+       
+    }
+}

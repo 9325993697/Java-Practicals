@@ -1,0 +1,57 @@
+import java.util.*;
+class Employee_count
+{
+    int id;
+    String Deptname;
+    static int count;
+    String name;
+    Double salary;
+    Scanner s=new Scanner(System.in);
+    Employee_count()
+    {
+        count++;
+        System.out.println("Enter Id,Name,Dept_name and salary ");
+        id=s.nextInt();
+        name=s.next();
+        Deptname=s.next();
+        salary=s.nextDouble();
+    }
+    Employee_count(int id,String name,String Dept_name,Double salary)
+    {
+        count++;
+        this.id=id;
+        this.name=name;
+        this.Deptname=Dept_name;
+        this.salary=salary;
+    }
+    public String toString()
+    {
+        return "Number of object create by user "+count;
+    }
+    void show()
+    {
+        System.out.println(id+" "+name+" "+Deptname+" "+salary);
+    }
+}
+class Slip20
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        int id;
+        Employee_count s1=new  Employee_count();
+        String name;
+        String Deptname;
+        Double salary;
+        System.out.println(s1);
+        System.out.println("Enter Id,Name,Dept_name and salary ");
+        id=s.nextInt();
+        name=s.next();
+        Deptname=s.next();
+        salary=s.nextDouble();
+        Employee_count s2=new  Employee_count (id,name,Deptname,salary);
+        System.out.println(s2);
+        s1.show();
+        s2.show();
+    }
+}
