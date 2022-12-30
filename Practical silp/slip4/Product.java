@@ -30,7 +30,7 @@ class Trash
         {
             for(int j=i+1;j<p.length;j++)
             {
-                if(p[i].getPrice()<p[j].getPrice())
+                if(p[i].getPrice()>p[j].getPrice())
                 {
                     Trash t=p[i];
                     p[i]=p[j];
@@ -38,8 +38,8 @@ class Trash
                 }
             }
         }
-        for(int i=0;i<n;i++)
-            p[i].display();
+//         for(int i=0;i<n;i++)
+            p[0].display();
         
         
     }
