@@ -1,0 +1,20 @@
+import java.util.*;
+class Slip13 {
+public static void main(String[] args) 
+{
+LinkedList ll= new LinkedList();
+ll.add("APPLE");
+ll.add("Banana");
+ll.add("Gauva");
+ll.add("Orange");
+
+Iterator i = ll.iterator();
+
+System.out.println("\ncontents of the List using an Iterator:\n");
+
+while (i.hasNext()) 
+{
+String s = (String) i.next();
+System.out.println(s);
+}
+}

@@ -1,0 +1,31 @@
+package Series;
+
+public class Square {
+    int n,square;
+    public void Square(int n)
+    {
+    for(int i=1;i<=n;i++)
+    {
+        square=i*i;
+        System.out.println("Square of"+ i+" is = "+square);
+    }
+}
+    
+}
+
+
+MAIN file Program
+
+import series.*;
+import java.io.*;
+public class SeriesMain {
+  public static void main(String [] args)throws IOException
+  {
+    Square S=new  Square();
+    int i;
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Enter a number / 0 to exit");
+    i=Integer.parseInt(br.readLine());
+    S.Square(i);
+}
+}

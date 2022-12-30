@@ -1,0 +1,52 @@
+abstract class shape
+
+{
+
+    abstract void area();
+
+    abstract void volume();
+
+}
+
+class sphere extends shape
+
+{
+
+    double pi=3.14;
+
+    double radius=4.35;
+
+    void area()
+
+    {
+
+        double ar=4*pi*radius*radius;
+
+        System.out.println("Area of Sphere is :"+ar);
+
+    }
+
+    void volume()
+
+    {
+
+        double vol=(4/3)*(pi*radius*radius*radius);
+
+        System.out.println("Volume of Sphere is :"+vol);
+
+    }
+
+}
+public class Slip11
+{
+    public static void main(String a[])
+
+    {
+
+        sphere s=new sphere();
+
+        s.area();
+
+        s.volume();
+    }
+}

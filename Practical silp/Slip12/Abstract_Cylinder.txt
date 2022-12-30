@@ -1,0 +1,53 @@
+abstract class shape
+
+{
+
+    abstract void area();
+
+    abstract void volume();
+
+}
+class cylinder extends shape
+
+{
+
+	double pi=3.14;
+
+	double radius=4.35;
+
+	double height=6.45;
+
+	void area()
+
+	{
+
+		double A=(2*pi*radius*height)+(2*pi*radius*radius);
+
+		System.out.println("Area of Cylinder is :"+A);
+
+	}
+
+	void volume()
+
+	{
+
+		double V=pi*radius*radius*height;
+
+		System.out.println("Volume of Cylinder is :"+V);
+
+	}
+}
+
+  public class Slip11
+   {
+    public static void main(String a[])
+
+    {
+
+        cylinder c=new cylinder ();
+
+        c.area();
+
+        c.volume();
+    }
+}
