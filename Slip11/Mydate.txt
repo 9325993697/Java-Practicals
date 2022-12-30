@@ -1,0 +1,37 @@
+public class MyDate {
+    static int DD,MM,YY;
+
+    public MyDate()
+    {
+        int DD=11 ,MM=10, YY=2002;
+
+
+
+    }
+
+    public MyDate( int DD,int MM,int YY)
+    {
+        this.DD=DD;
+        this.MM=MM;
+        this.YY=YY;
+
+
+    }
+
+    public void display()
+    {
+        System.out.println(DD+"/"+MM+"/"+YY);
+    }
+
+    public static void main(String arg[])
+    {
+
+
+
+        MyDate s1= new MyDate();
+        MyDate s2= new MyDate( 10 ,12,2002);
+
+        s1.display();
+        s2.display();
+    }
+}

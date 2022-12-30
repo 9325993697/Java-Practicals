@@ -1,0 +1,46 @@
+import java.io.*;
+
+abstract class Order
+{
+    String id,description;
+}
+class PurchaseOrder extends Order
+{
+    String Customername;
+    public void accept() throws IOException
+    {
+        System.out.println("Enter the id,description,names of customers: ");
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        id=br.readLine();
+        description=br.readLine();
+        Customername=br.readLine();
+
+    }
+    public void display(){
+        System.out.println("id: "+id);
+        System.out.println("Description: "+description);
+        System.out.println("Customername: "+Customername);
+
+        System.out.println("----------------------");
+    }
+}
+public class Abstract_order
+{
+    public static void main(String [] args) throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the number of purchase Orders: ");
+        int n=Integer.parseInt(br.readLine());
+        PurchaseOrder [] l=new PurchaseOrder[n];
+        for(int i=0;i<n;i++)
+        {
+            l[i]=new PurchaseOrder();
+            l[i].accept();
+        }
+        for(int i=0;i<n;i++)
+        {
+            l[i].display();
+            System.out.println ("Object is created");
+        }
+    }
+}
