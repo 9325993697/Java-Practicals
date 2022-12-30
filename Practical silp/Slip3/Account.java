@@ -32,9 +32,9 @@ float getbal()
   {
    if(a[j].getbal()>a[j+1].getbal())
    {
-    Info t=a[j];
-    a[j]=a[j+1];
-    a[j+1]=t;
+    Info t=a[i];
+    a[i]=a[j];
+    a[j]=t;
    }
  }
 }
