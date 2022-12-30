@@ -35,8 +35,8 @@ class EmpSal
                 }
             }
         }
-        for(int i=0;i<num;i++)
-            e[i].display();
+//         for(int i=0;i<num;i++)
+           e[0].display();
     }
     
 }
